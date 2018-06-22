@@ -18,7 +18,7 @@ from sklearn.preprocessing import MinMaxScaler
 sc = MinMaxScaler(feature_range = (0, 1)) #default feature range
 """We have to take new variable and apply fit_transform method from minmax scaler class. Here fit means it is going to
 get the min and max of the input data so that it could apply values to the Normalisation formulae. And from that transform method
-it is going to compute for each of the stock prices from the training set the scaled stock prices according to the Normalisation Formulae"""
+it is going to compute scaled stock prices for each of the stock prices from the training set according to the Normalisation Formulae"""
 training_set_scaled = sc.fit_transform(training_set) 
 
 # Creating a data structure with 60 timesteps and 1 output
