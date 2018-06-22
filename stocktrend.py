@@ -23,7 +23,7 @@ training_set_scaled = sc.fit_transform(training_set)
 
 # Creating a data structure with 60 timesteps and 1 output
 """60 timesteps means that for each time t rnn is going to look at 60 stock prices before time t that is stock prices between 60 days before time t and time t
-and based on the trends it is capturing during the 60 periods time steps it is going to predict the next output"""
+and based on the trends and correlation it is capturing during the 60 periods time steps it is going to predict the next output."""
 X_train = [] # inputs to the NN
 y_train = [] # output to the NN
 for i in range(60, 1258): #to populate X_train and y_train
